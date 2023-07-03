@@ -1,0 +1,26 @@
+.todo-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.todo-input {
+  margin-bottom: 10px;
+}
+
+.add-button {
+  margin-bottom: 10px;
+}
+
+.todo-list .ant-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.delete-button {
+  margin-left: 10px;
+}
