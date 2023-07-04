@@ -12,10 +12,10 @@ const TodoList: React.FC = () => {
   // State to hold the list of todos
   const [todos, setTodos] = useState<Todo[]>([]);
   // State to hold the input text for adding new todos
-  const [inputText, setInputText] = useState("");
-
+  const [inputText, setInputText] = useState<string>("");
   // Function to add a new todo
   const addTodo = () => {
+    console.log(inputText.trim(), "input");
     if (inputText.trim() !== "") {
       // Create a new todo object with a unique id
       const newTodo: Todo = {
@@ -24,16 +24,19 @@ const TodoList: React.FC = () => {
         completed: false,
       };
       // Add the new todo to the list of todos
+      // setTodos([newTodo]);
+      todos.push;
       setTodos([...todos, newTodo]);
       // Clear the input text
       setInputText("");
     }
   };
-
+  console.log(todos, "todos");
   // Function to toggle the completed status of a todo
   const toggleTodo = (id: number) => {
+    console.log(id);
     // Create a new array of todos with the toggled completed status
-    const updatedTodos = todos.map((todo) =>
+    const updatedTodos = todos.map((todo: Todo, index: number) =>
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
     );
     // Update the list of todos

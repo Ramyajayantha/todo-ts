@@ -1,8 +1,8 @@
 import "./App.css";
-import TodoList from "./components/Todo";
+import JSONPractice from "./components/JSON";
 
 function App() {
-  return <TodoList />;
+  return <JSONPractice />;
 }
 
 export default App;
