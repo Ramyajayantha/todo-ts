@@ -33,7 +33,7 @@ const TodoList = () => {
     // Update the list of todos
     setTodos(updatedTodos);
   };
-
+  
   // Function to delete a todo
   const deleteTodo = (id) => {
     // Create a new array of todos excluding the deleted todo
