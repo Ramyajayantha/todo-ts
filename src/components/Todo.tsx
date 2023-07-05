@@ -29,7 +29,7 @@ const TodoList: React.FC = () => {
       setInputText("");
     }
   };
- 
+
   // Function to toggle the completed status of a todo
   const toggleTodo = (id: number) => {
     // Create a new array of todos with the toggled completed status
@@ -39,7 +39,7 @@ const TodoList: React.FC = () => {
     // Update the list of todos
     setTodos(updatedTodos);
   };
- 
+
   // Function to delete a todo
   const deleteTodo = (id: number) => {
     // Create a new array of todos excluding the deleted todo
